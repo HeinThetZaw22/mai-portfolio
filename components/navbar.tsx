@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "./container";
-import { Heading1, Menu } from "lucide-react";
+import { Heading1 } from "lucide-react";
 
 const Navbar = () => {
   return (

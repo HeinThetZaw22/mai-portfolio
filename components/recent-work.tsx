@@ -2,10 +2,8 @@
 
 import React from "react";
 import Container from "./container";
-import { Card } from "./ui/card";
-import { GitBranch, Telescope } from "lucide-react";
+import { GitBranch } from "lucide-react";
 import ProjectCard from "./project-card";
-import { Icon } from "@iconify/react";
 import Shadcn from "./icons/shadcn";
 import MuxIcon from "./icons/mux";
 import TanstackIcon from "./icons/tanstack";
@@ -164,7 +162,7 @@ const RecentWork = () => {
           My Recent Work
         </h1>
         <p className=" text-lg  font-poppins text-center text-wrap text-secondary/80">
-          Here are a few past projects I've worked on.
+          Here are a few past projects I&apos;ve worked on.
         </p>
       </div>
       <div className=" grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">

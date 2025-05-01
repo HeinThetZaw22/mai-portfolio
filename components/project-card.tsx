@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ElementType } from "react";
 import { Card } from "./ui/card";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
@@ -9,7 +9,7 @@ interface ProjectCardProps {
   description: string;
   demoLink?: string;
   sourceLink: string;
-  techstacks: { icon: any; name: string }[];
+  techstacks: { icon: string | ElementType; name: string }[];
 }
 const ProjectCard = ({
   title,

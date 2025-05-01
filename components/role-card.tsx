@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Code } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 
 interface RoleCard {
-    icon: any;
+  icon: LucideIcon;
   title: string;
   description: string;
   techStacksTitle: string;
@@ -11,7 +11,7 @@ interface RoleCard {
 }
 
 const RoleCard = ({
- icon: Icon,
+  icon: Icon,
   title,
   description,
   techStacksTitle,
@@ -34,7 +34,10 @@ const RoleCard = ({
           <h3 className=" text-primary pb-3">{techStacksTitle}:</h3>
           <div className=" flex flex-col font-montserrat space-y-1">
             {techStacks.map((item, i) => (
-              <span key={i} className=" px-4 w-fit text-start text-sm py-1 rounded-full">
+              <span
+                key={i}
+                className=" px-4 w-fit text-start text-sm py-1 rounded-full"
+              >
                 {item}
               </span>
             ))}

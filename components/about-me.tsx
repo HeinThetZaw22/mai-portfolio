@@ -1,14 +1,6 @@
 import React from "react";
 import Container from "./container";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
-import {
   Code,
   DatabaseBackup,
   MessageSquareText,
@@ -23,15 +15,15 @@ const AboutMe = () => {
         <Container>
           <div className=" md:pb-40 pb-24 pt-24 flex space-y-5 flex-col items-center justify-center">
             <h1 className=" text-white text-center text-2xl md:text-4xl font-bold">
-              Hi, I'm Hein Thet. It's a pleasure to meet you.
+              Hi, I&apos;m Hein Thet. It&apos;s a pleasure to meet you.
             </h1>
             <p className=" px-2 sm:px-8 md:px-24 lg:px-24 text-pretty text-center leading-8 text-md md:text-lg text-white font-poppins">
-              I've been a web developer for the past two years, during which
-              time I've worked both freelance and onsite. I've had the
-              opportunity to collaborate with talented individuals to build
-              digital products for businesses and consumers alike. I'm a
-              naturally curious person, quietly confident, and always striving
-              to enhance my skills.
+              I&apos;ve been a web developer for the past two years, during
+              which time I&apos;ve worked both freelance and onsite. I&apos;ve
+              had the opportunity to collaborate with talented individuals to
+              build digital products for businesses and consumers alike.
+              I&apos;m a naturally curious person, quietly confident, and always
+              striving to enhance my skills.
             </p>
           </div>
         </Container>
@@ -68,7 +60,7 @@ const AboutMe = () => {
                 "Prisma",
                 "AWS S3",
                 "MongoDB, MYSQL, PostgreSQL, MSSQL",
-                "Basic knowledge of server deployment"
+                "Basic knowledge of server deployment",
               ]}
             />
             <RoleCard
@@ -93,8 +85,8 @@ const AboutMe = () => {
               Interested in collaborating with me?
             </h1>
             <p className=" text-pretty text-center text-md text-secondary/70 font-poppins">
-              I'm always open to discussing product design work or partnership
-              opportunities
+              I&apos;m always open to discussing product design work or
+              partnership opportunities
             </p>
             <button className=" cursor-pointer font-poppins flex gap-3 px-4 py-2 mt-5 text-primary border-2 border-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-full">
               <MessageSquareText /> Start a conversation

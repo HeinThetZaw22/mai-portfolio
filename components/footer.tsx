@@ -1,9 +1,14 @@
+"use client"
+
 import React from "react";
 import Container from "./container";
 import { Copyright, HandMetal } from "lucide-react";
 import SocialIcons from "./social-icons";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
+
   return (
     <div className=" bg-primary relative pt-56 text-white">
       <Container>
@@ -14,7 +19,10 @@ const Footer = () => {
             <p>We should queue up a time to chat.</p>
             <p>I&apos;ll buy the coffee</p>
           </div>
-          <button className="flex active:scale-95 font-poppins items-center gap-2 text-white text-nowrap cursor-pointer hover:bg-emerald-300 hover:border-emerald-300 hover:text-secondary transition-all duration-200 px-6 font-medium py-2 rounded-full border-2 border-emerald-300">
+          <button
+            onClick={() => router.push("/project-planner")}
+            className="flex active:scale-95 font-poppins items-center gap-2 text-white text-nowrap cursor-pointer hover:bg-emerald-300 hover:border-emerald-300 hover:text-secondary transition-all duration-200 px-6 font-medium py-2 rounded-full border-2 border-emerald-300"
+          >
             <HandMetal size={20} /> Let&apos;s do this
           </button>
         </div>

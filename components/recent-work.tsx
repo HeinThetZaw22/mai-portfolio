@@ -8,6 +8,10 @@ import Shadcn from "./icons/shadcn";
 import MuxIcon from "./icons/mux";
 import TanstackIcon from "./icons/tanstack";
 import ImageKitIcon from "./icons/imagekit";
+import AirbnbImage from "../public/airbnb.png";
+import LmsImage from "../public/lms.png";
+import AuthImage from "../public/auth.png";
+import BlogImage from "../public/blog.png";
 
 const Airbnb = [
   {
@@ -168,13 +172,15 @@ const RecentWork = () => {
       <div className=" grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
         <ProjectCard
           title="Maibnb"
-          demoLink="https://rent-home-burma.vercel.app/"
+          image={AirbnbImage}
+          // demoLink="https://rent-home-burma.vercel.app/"
           description="Users can make reservations and bnb their property (airbnb clone) using email and google authentication"
           sourceLink="https://github.com/HeinThetZaw22/airbnb-clone-nextapp"
           techstacks={Airbnb}
         />
         <ProjectCard
           title="Mini LMS"
+          image={LmsImage}
           // demoLink="https://rent-home-burma.vercel.app/"
           description="Learning platform where users can publish own courses or purchase from another"
           sourceLink="https://github.com/HeinThetZaw22/mini-lms-platform"
@@ -182,6 +188,7 @@ const RecentWork = () => {
         />
         <ProjectCard
           title="Authenication"
+          image={AuthImage}
           // demoLink="https://rent-home-burma.vercel.app/"
           description="Full authentication with email, google, github using only next-auth (role-based, two-factor, password reset with code)"
           sourceLink="https://github.com/HeinThetZaw22/next-full-authentication"
@@ -189,6 +196,7 @@ const RecentWork = () => {
         />
         <ProjectCard
           title="Mini Blog App"
+          image={BlogImage}
           // demoLink="https://rent-home-burma.vercel.app/"
           description="Users publish blog and give reviews on each other post"
           sourceLink="https://github.com/HeinThetZaw22/mini-blog-app"

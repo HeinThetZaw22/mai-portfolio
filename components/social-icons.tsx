@@ -1,10 +1,10 @@
-import { Instagram, Linkedin, Mail, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Mail, Facebook, Twitter } from "lucide-react";
 
 export default function SocialIcons() {
   return (
     <div className="space-x-5 flex">
       <a
-        href="https://twitter.com/your_username"
+        href="https://x.com/HeinThetZaw10?s=09"
         target="_blank"
         rel="noopener noreferrer"
         className="border-gray-100 hover:border-white border-2 hover:bg-white hover:text-primary transition duration-200 cursor-pointer rounded-full p-3"
@@ -13,12 +13,12 @@ export default function SocialIcons() {
       </a>
 
       <a
-        href="https://instagram.com/your_username"
+        href="https://www.facebook.com/share/1BsuJ4BuUv/"
         target="_blank"
         rel="noopener noreferrer"
         className="border-gray-100 hover:border-white border-2 hover:bg-white hover:text-primary transition duration-200 cursor-pointer rounded-full p-3"
       >
-        <Instagram size={20} />
+        <Facebook size={20} />
       </a>
 
       <a

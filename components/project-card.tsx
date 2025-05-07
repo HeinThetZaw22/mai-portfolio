@@ -2,10 +2,9 @@ import React, { ElementType } from "react";
 import { Card } from "./ui/card";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import Airbnb from "../public/airbnb.png";
-
 interface ProjectCardProps {
   title: string;
+  image: any;
   description: string;
   demoLink?: string;
   sourceLink: string;
@@ -15,13 +14,14 @@ const ProjectCard = ({
   title,
   description,
   demoLink,
+  image,
   sourceLink,
   techstacks,
 }: ProjectCardProps) => {
   return (
     <Card className=" p-0">
       <div className=" relative aspect-[16/9] m-1">
-        <Image src={Airbnb} alt="web" fill className="" />
+        <Image src={image} alt="web" fill className="" />
       </div>
       <div className=" px-5 pb-5 space-y-2">
         <div className=" flex justify-between items-center">

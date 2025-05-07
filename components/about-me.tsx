@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import Container from "./container";
 import {
@@ -7,8 +9,11 @@ import {
   TabletSmartphone,
 } from "lucide-react";
 import RoleCard from "./role-card";
+import { useRouter } from "next/navigation";
 
 const AboutMe = () => {
+  const router = useRouter();
+
   return (
     <>
       <div className="bg-primary">
@@ -88,7 +93,10 @@ const AboutMe = () => {
               I&apos;m always open to discussing product design work or
               partnership opportunities
             </p>
-            <button className=" cursor-pointer font-poppins flex gap-3 px-4 py-2 mt-5 text-primary border-2 border-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-full">
+            <button
+              onClick={() => router.push("/startup-inquiry")}
+              className=" cursor-pointer font-poppins flex gap-3 px-4 py-2 mt-5 text-primary border-2 border-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-full"
+            >
               <MessageSquareText /> Start a conversation
             </button>
           </div>

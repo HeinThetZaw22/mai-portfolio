@@ -212,7 +212,7 @@ const RecentWork = () => {
           techstacks={NextAuth}
         />
         <ProjectCard
-          title="Mini Blog App"
+          title="Mini Blog Website"
           image={BlogImage}
           // demoLink="https://rent-home-burma.vercel.app/"
           description="Users publish blog and give reviews on each other post"
@@ -220,7 +220,7 @@ const RecentWork = () => {
           techstacks={BlogApp}
         />
         <ProjectCard
-          title="Mini Blog App"
+          title="Expense Tracker App"
           image={ExpenseImage}
           description="To track expense of my own, developed expense tracker app using firebase console"
           sourceLink="https://github.com/HeinThetZaw22/expense-tracker"

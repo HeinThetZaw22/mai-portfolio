@@ -65,7 +65,7 @@ const ProjectPlanner = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-center">
+    <div className="h-full pb-10 flex items-center justify-center">
       <Container>
         <div className="flex items-center justify-center">
           <Image
@@ -76,12 +76,12 @@ const ProjectPlanner = () => {
             className="aspect-square rounded-full bg-cover"
           />
         </div>
-        <div className="lg:space-y-4 space-y-3 ld:px-10 px-2">
+        <div className="lg:space-y-8 space-y-5 ld:px-10 px-2">
           <h1 className="text-3xl px-2 py-10 text-center text-[#141c3a] opacity-95">
             I&apos;m excited to learn about your project. Ready to get started?
           </h1>
 
-          <div className="flex flex-col sm:flex-row items-center gap-3 lg:gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-5 lg:gap-8">
             <Input
               placeholder="Name"
               value={name}
@@ -94,7 +94,7 @@ const ProjectPlanner = () => {
             />
           </div>
 
-          <div className="flex flex-col w-full sm:flex-row gap-3 lg:gap-4">
+          <div className="flex flex-col w-full sm:flex-row gap-5 lg:gap-8">
             <Select
               onValueChange={(value) => setProjectType(value)}
               value={projectType}

@@ -48,7 +48,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-center">
+    <div className="h-full pb-10 flex items-center justify-center">
       <Container>
         <div className=" flex items-center justify-center">
           <Image
@@ -59,11 +59,11 @@ const ContactMe = () => {
             className=" aspect-square rounded-full bg-cover"
           />
         </div>
-        <div className="lg:space-y-8 space-y-3 lg:px-10 px-2">
+        <div className="lg:space-y-8 space-y-5 lg:px-10 px-2">
           <h1 className="text-3xl px-5 py-10 text-center text-secondary">
             Thanks for taking the time to reach out. How can I help you today?
           </h1>
-          <div className="flex flex-col sm:flex-row items-center gap-3 lg:gap-8">
+          <div className="flex flex-col sm:flex-row items-center gap-5 lg:gap-8">
             <Input
               placeholder="Name"
               value={name}

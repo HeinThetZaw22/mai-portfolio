@@ -65,7 +65,7 @@ const StartUpInquiry = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-center">
+    <div className="h-full pb-10 flex items-center justify-center">
       <Container>
         <div className="flex items-center justify-center">
           <Image
@@ -76,13 +76,13 @@ const StartUpInquiry = () => {
             className="aspect-square rounded-full bg-cover"
           />
         </div>
-        <div className="lg:space-y-4 space-y-3 lg:px-10 px-2">
+        <div className="lg:space-y-8 space-y-5 lg:px-10 px-2">
           <h1 className="text-3xl px-5 py-10 text-center text-[#141c3a] opacity-95">
             Want to discuss a startup collaboration? I&apos;m most definitely
             game.
           </h1>
 
-          <div className="flex flex-col sm:flex-row items-center lg:gap-4 gap-3">
+          <div className="flex flex-col sm:flex-row items-center lg:gap-8 gap-5">
             <Input
               placeholder="Name"
               value={name}
@@ -95,7 +95,7 @@ const StartUpInquiry = () => {
             />
           </div>
 
-          <div className="flex flex-col w-full sm:flex-row lg:gap-4 gap-3">
+          <div className="flex flex-col w-full sm:flex-row lg:gap-8 gap-5">
             <Select
               onValueChange={(value) => setProjectType(value)}
               value={projectType}

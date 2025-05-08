@@ -12,6 +12,7 @@ import AirbnbImage from "../public/airbnb.png";
 import LmsImage from "../public/lms.png";
 import AuthImage from "../public/auth.png";
 import BlogImage from "../public/blog.png";
+import ExpenseImage from "../public/expense.png";
 
 const Airbnb = [
   {
@@ -158,6 +159,22 @@ const BlogApp = [
   },
 ];
 
+const ExpenseApp = [
+  {
+    icon: "logos:react",
+    name: "React Native",
+  },
+  {
+    icon: "logos:firebase",
+    name: "Firebase",
+  },
+  {
+    icon: "logos:expo-icon",
+    name: "Expo",
+  },
+];
+
+
 const RecentWork = () => {
   return (
     <Container>
@@ -201,6 +218,13 @@ const RecentWork = () => {
           description="Users publish blog and give reviews on each other post"
           sourceLink="https://github.com/HeinThetZaw22/mini-blog-app"
           techstacks={BlogApp}
+        />
+        <ProjectCard
+          title="Mini Blog App"
+          image={ExpenseImage}
+          description="To track expense of my own, developed expense tracker app using firebase console"
+          sourceLink="https://github.com/HeinThetZaw22/expense-tracker"
+          techstacks={ExpenseApp}
         />
       </div>
       <div className=" flex items-center pt-14 pb-20 justify-center">

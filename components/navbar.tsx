@@ -23,7 +23,7 @@ const Navbar = () => {
           >
             Resume
           </a>
-          {pathname !== "/contact" && pathname !== "/project-planner" && (
+          {pathname !== "/contact" && pathname !== "/project-planner" && pathname !== "/startup-inquiry" && (
             <button
               onClick={() => router.push(`/contact`)}
               className=" cursor-pointer px-4 py-2 text-primary border-2 border-primary hover:bg-primary hover:text-white transition-all duration-200 active:scale-95 rounded-full"

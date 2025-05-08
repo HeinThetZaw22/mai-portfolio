@@ -14,6 +14,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Profile from "../../public/profile.png";
 import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 const StartUpInquiry = () => {
   const [name, setName] = useState("");
@@ -23,6 +24,7 @@ const StartUpInquiry = () => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
+  const router = useRouter();
 
   const handleSubmit = async () => {
     if (
@@ -52,7 +54,7 @@ const StartUpInquiry = () => {
         setInterest("");
         setMessage("");
       } else {
-        alert("Failed to send. Try again.");
+        toast.error("Failed to send. Try again");
         console.error(data.error);
       }
     } catch (err) {
@@ -63,7 +65,7 @@ const StartUpInquiry = () => {
   };
 
   return (
-    <div className="h-[70vh] pt-20 flex items-center justify-center">
+    <div className="h-full flex items-center justify-center">
       <Container>
         <div className="flex items-center justify-center">
           <Image
@@ -74,12 +76,13 @@ const StartUpInquiry = () => {
             className="aspect-square rounded-full bg-cover"
           />
         </div>
-        <div className="space-y-8 px-10">
+        <div className="lg:space-y-4 space-y-3 lg:px-10 px-2">
           <h1 className="text-3xl px-5 py-10 text-center text-[#141c3a] opacity-95">
-            Want to discuss a startup collaboration? I&apos;m most definitely game.
+            Want to discuss a startup collaboration? I&apos;m most definitely
+            game.
           </h1>
 
-          <div className="flex flex-col sm:flex-row items-center gap-8">
+          <div className="flex flex-col sm:flex-row items-center lg:gap-4 gap-3">
             <Input
               placeholder="Name"
               value={name}
@@ -92,7 +95,7 @@ const StartUpInquiry = () => {
             />
           </div>
 
-          <div className="flex flex-col w-full sm:flex-row gap-8">
+          <div className="flex flex-col w-full sm:flex-row lg:gap-4 gap-3">
             <Select
               onValueChange={(value) => setProjectType(value)}
               value={projectType}
@@ -131,11 +134,17 @@ const StartUpInquiry = () => {
             />
           </div>
 
-          <div className="flex items-center justify-center">
+          <div className="flex items-center gap-3 md:justify-between pt-5 justify-center">
+            <button
+              onClick={() => router.back()}
+              className="cursor-pointer w-full py-2 text-primary border-2 border-primary hover:opacity-80 hover:scale-95 transition-all duration-200 active:scale-95 rounded-full"
+            >
+              Back
+            </button>
             <button
               onClick={handleSubmit}
               disabled={loading}
-              className="cursor-pointer max-sm:w-full px-10 py-2 text-primary border-2 border-primary hover:bg-primary hover:text-white transition-all duration-200 active:scale-95 rounded-full"
+              className="cursor-pointer w-full py-2 text-white border-2 border-primary bg-primary hover:opacity-95 transition-all duration-200 active:scale-95 rounded-full"
             >
               {loading ? "Sending..." : "Send"}
             </button>

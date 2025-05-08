@@ -76,7 +76,7 @@ const ProjectPlanner = () => {
         </div>
         <div className="space-y-8 px-10">
           <h1 className="text-3xl px-5 py-10 text-center text-[#141c3a] opacity-95">
-            I'm excited to learn about your project. Ready to get started?
+            I&apos;m excited to learn about your project. Ready to get started?
           </h1>
 
           <div className="flex flex-col sm:flex-row items-center gap-8">

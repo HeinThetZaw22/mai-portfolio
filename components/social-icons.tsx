@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Mail, Facebook, Twitter } from "lucide-react";
+import { Linkedin, Mail, Facebook, Twitter } from "lucide-react";
 
 export default function SocialIcons() {
   return (

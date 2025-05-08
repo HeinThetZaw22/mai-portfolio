@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className=" flex font-poppins items-center text-sm sm:text-md sm:gap-3 gap-1">
           <a
             download
-            href="/myCV.pdf"
+            href="/resume.pdf"
             className=" px-4 py-2 cursor-pointer text-[#141c3a] active:scale-95 transition duration-200 hover:text-primary"
           >
             Resume

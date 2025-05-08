@@ -1,10 +1,10 @@
 import React, { ElementType } from "react";
 import { Card } from "./ui/card";
 import { Icon } from "@iconify/react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 interface ProjectCardProps {
   title: string;
-  image: any;
+  image: StaticImageData;
   description: string;
   demoLink?: string;
   sourceLink: string;

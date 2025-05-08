@@ -59,7 +59,7 @@ const AboutMe = () => {
                   and creating the logic that drives applications."
               techStacksTitle="Languages"
               techStacks={[
-                "Node.js, Express.js",
+                "Node.js (Express/Nest)",
                 "Typescript",
                 // "RESTful APIs",
                 "Prisma",

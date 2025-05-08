@@ -76,7 +76,7 @@ const StartUpInquiry = () => {
         </div>
         <div className="space-y-8 px-10">
           <h1 className="text-3xl px-5 py-10 text-center text-[#141c3a] opacity-95">
-            Want to discuss a startup collaboration? I'm most definitely game.
+            Want to discuss a startup collaboration? I&apos;m most definitely game.
           </h1>
 
           <div className="flex flex-col sm:flex-row items-center gap-8">

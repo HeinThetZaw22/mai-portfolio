@@ -174,7 +174,6 @@ const ExpenseApp = [
   },
 ];
 
-
 const RecentWork = () => {
   return (
     <Container>
@@ -190,7 +189,7 @@ const RecentWork = () => {
         <ProjectCard
           title="Maibnb"
           image={AirbnbImage}
-          // demoLink="https://rent-home-burma.vercel.app/"
+          demoLink="https://rent-home-burma.vercel.app/"
           description="Users can make reservations and bnb their property (airbnb clone) using email and google authentication"
           sourceLink="https://github.com/HeinThetZaw22/airbnb-clone-nextapp"
           techstacks={Airbnb}
@@ -198,7 +197,7 @@ const RecentWork = () => {
         <ProjectCard
           title="Mini LMS"
           image={LmsImage}
-          // demoLink="https://rent-home-burma.vercel.app/"
+          demoLink="https://mai-1sli41qop-heinthetzaw22s-projects.vercel.app/"
           description="Learning platform where users can publish own courses or purchase from another"
           sourceLink="https://github.com/HeinThetZaw22/mini-lms-platform"
           techstacks={LMS}
@@ -206,7 +205,7 @@ const RecentWork = () => {
         <ProjectCard
           title="Authenication"
           image={AuthImage}
-          // demoLink="https://rent-home-burma.vercel.app/"
+          demoLink="https://my-auth-service.vercel.app/"
           description="Full authentication with email, google, github using only next-auth (role-based, two-factor, password reset with code)"
           sourceLink="https://github.com/HeinThetZaw22/next-full-authentication"
           techstacks={NextAuth}

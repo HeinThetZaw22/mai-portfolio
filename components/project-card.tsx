@@ -34,7 +34,7 @@ const ProjectCard = ({
                 href={demoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-xs border border-emerald-200 px-4 py-2 rounded-md hover:bg-emerald-50 transition duration-200"
+                className=" text-xs border border-emerald-500 text-emerald-500 px-4 py-2 rounded-md hover:bg-emerald-50 transition duration-200"
               >
                 Demo
               </a>

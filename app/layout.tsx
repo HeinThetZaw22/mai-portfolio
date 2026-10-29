@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import RouteAtmosphere from "@/components/route-atmosphere";
 import { Toaster } from "react-hot-toast";
+import {
+  TransitionContent,
+  TransitionProvider,
+} from "@/components/transition-provider";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -31,9 +36,12 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${poppins.variable} antialiased`}
       >
-        <Navbar />
-        <Toaster />
-        {children}
+        <TransitionProvider>
+          <RouteAtmosphere />
+          <Navbar />
+          <Toaster />
+          <TransitionContent>{children}</TransitionContent>
+        </TransitionProvider>
       </body>
     </html>
   );

@@ -13,6 +13,7 @@ import LmsImage from "../public/lms.png";
 import AuthImage from "../public/auth.png";
 import BlogImage from "../public/blog.png";
 import ExpenseImage from "../public/expense.png";
+import { Reveal, StaggerReveal } from "./motion/reveal";
 
 const Airbnb = [
   {
@@ -177,15 +178,24 @@ const ExpenseApp = [
 const RecentWork = () => {
   return (
     <Container>
-      <div className=" flex flex-col py-16 items-center justify-center">
-        <h1 className=" text-[2rem] py-3 text-[#141c3a] font-bold">
+      <Reveal
+        direction="right"
+        className="flex flex-col py-16 items-center justify-center"
+        distance={40}
+      >
+        <h1 className="text-[2rem] py-3 text-[#141c3a] font-bold">
           My Recent Work
         </h1>
-        <p className=" text-lg  font-poppins text-center text-wrap text-secondary/80">
+        <p className="text-lg font-poppins text-center text-wrap text-secondary/80">
           Here are a few past projects I&apos;ve worked on.
         </p>
-      </div>
-      <div className=" grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
+      </Reveal>
+      <StaggerReveal
+        className="grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3"
+        stagger={0.1}
+        direction="alternate"
+        distance={52}
+      >
         <ProjectCard
           title="Maibnb"
           image={AirbnbImage}
@@ -213,7 +223,6 @@ const RecentWork = () => {
         <ProjectCard
           title="Mini Blog Website"
           image={BlogImage}
-          // demoLink="https://rent-home-burma.vercel.app/"
           description="Users publish blog and give reviews on each other post"
           sourceLink="https://github.com/HeinThetZaw22/mini-blog-app"
           techstacks={BlogApp}
@@ -225,8 +234,13 @@ const RecentWork = () => {
           sourceLink="https://github.com/HeinThetZaw22/expense-tracker"
           techstacks={ExpenseApp}
         />
-      </div>
-      <div className=" flex items-center pt-14 pb-20 justify-center">
+      </StaggerReveal>
+      <Reveal
+        direction="left"
+        className="flex items-center pt-14 pb-20 justify-center"
+        delay={0.05}
+        distance={36}
+      >
         <a
           href="https://github.com/HeinThetZaw22"
           target="_blank"
@@ -235,7 +249,7 @@ const RecentWork = () => {
         >
           <GitBranch size={20} /> See more on Github
         </a>
-      </div>
+      </Reveal>
     </Container>
   );
 };

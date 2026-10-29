@@ -1,17 +1,15 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import { getResend } from "@/lib/resend";
 
 export async function POST(req: Request) {
   try {
     const { name, email, projectType, interest, message } = await req.json();
 
-    console.log(name, email, projectType, interest, message);
     if (!name || !email || !projectType || !interest || !message) {
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
     }
 
+    const resend = getResend();
     const data = await resend.emails.send({
       from: `${name} <onboarding@resend.dev>`,
       to: "heinthetzaw2212@gmail.com",
